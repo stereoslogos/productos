@@ -1,14 +1,14 @@
 {
   "name": "proyectoinicial",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto sencillo creado con Node JS usando Express, PUG bajo la arquitectura de MVC",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["MVC", "PUG", "Express", "JavaScript"],
+  "author": "Jaime Zapata Valencia",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
