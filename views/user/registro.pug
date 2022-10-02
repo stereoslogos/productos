@@ -1,0 +1,24 @@
+extends ../layout/index
+
+block main
+  block form
+    form(action="" class="formularioLogin")
+      div 
+        label(for="usuario") Nombre
+        input( id="usuario" type="text" )  
+      div 
+        label(for="usuario") Correo
+        input( id="usuario" type="text" )  
+      div 
+        label(for="paswword") Contraseña
+        input( id="paswword" type="text" )  
+      div 
+        label(for="paswword") Confirmar Contraseña
+        input( id="paswword" type="text" )  
+      div 
+        input( id="iniciar" type="submit" value="Iniciar Sesión")
+      div(class="enlaces")
+        a(href="login") 
+          span ¿Ya tiene cuenta?
+        a(href="recuperar") 
+          span ¿olvidó su contraseña?
