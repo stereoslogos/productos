@@ -17,6 +17,8 @@ app.set('views', './views')
 app.set(express.static('public'))
 app.use(userRoute);
 
+app.use(express.urlencoded({extended:true}));
+
 app.listen(puerto, ()=>{
-  console.log(`Servidor corriendo en el puerto ${puerto}`);
+  console.log(`[Bash] Servidor corriendo en el puerto ${puerto}`);
 });
