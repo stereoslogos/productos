@@ -1,4 +1,4 @@
-import { Usuario } from "../models/UserModel.js"
+import Usuario from "../models/UserModel.js"
 
 const fomrularioLogin = (req, res) => {
   res.render(`user/login`, {
@@ -19,7 +19,7 @@ const fomrularioRecuperar = (req, res) => {
 // Metodos CRUD
 
 const crearUsuario = async (req, res) => {
-  const user = await Usuario.create(req.body);
+  const user = await Usuario.create(req.body)
   res.json(user);
   console.log(req.body)
   console.log(`[Bash] New user created`);
